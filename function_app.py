@@ -40,7 +40,7 @@ def receive(req: func.HttpRequest) -> func.HttpResponse:
             )
         
         # Get container name from environment or use default
-        container_name = os.environ.get('BLOB_CONTAINER_NAME', 'uploads')
+        container_name = os.environ.get('STORAGE_CONTAINER_NAME', 'uploads')
         
         # Initialize blob service client
         blob_service_client = BlobServiceClient.from_connection_string(connection_string)

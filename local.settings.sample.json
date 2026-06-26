@@ -1,0 +1,9 @@
+{
+    
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=http;AccountName=localuser;AccountKey=bG9jYWxwYXNzd29yZA==;BlobEndpoint=http://127.0.0.1:10000/localuser;QueueEndpoint=http://127.0.0.1:10001/localuser;TableEndpoint=http://127.0.0.1:10002/localuser;",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "STORAGE_CONTAINER_NAME": "unclassified"
+  }
+}
