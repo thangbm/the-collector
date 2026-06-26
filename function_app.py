@@ -19,8 +19,8 @@ def receive(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('File upload request received.')
     
     try:
-        # Get the uploaded file from the request
-        files = req.files.getlist('file')
+        # Get all uploaded files from the request
+        files = [file for key in req.files.keys() for file in req.files.getlist(key)]
         
         if not files or len(files) == 0:
             return func.HttpResponse(
